@@ -25,30 +25,32 @@ Because every sample moves one position to the direction of right. In the z-tran
 ### 4. Calculate y[0], y[1], y[2] and y[3] by hand. Compare them with MATLAB
 
 y[n] = 0.5x[n] + 0.5x[n-1]
-
 y[0] = 0.5x[0] + 0.5x[0-1]
-
 y[0] = 0.5(1) + 0.5(0) { Assume the input is zero before n = 0.}
-
 y[0] = 0.5
 
-
 y[1] = 0.5x[1] + 0.5x[1-1]
-
 y[1] = 0.5(2) + 0.5(1)
-
 y[1] = 1.5
 
-
 y[2] = 0.5x[2] + 0.5x[2-1]
-
 y[2] = 0.5(1) + 0.5(2)
-
 y[2] = 1.5
 
-
 y[3] = 0.5x[3] + 0.5x[3-1]
-
 y[3] = 0.5(0) + 0.5(1)
-
 y[3] = 0.5
+
+### 5. Explain how b = [0.5 0.5] represents the two terms in H(z).
+
+b is the coefficent of the H(z) function. The first 0.5 represent the current input and second input represent the previous input with one sample delay. Both have same values and it influence equally on the output.
+
+### 6. Change the system to H(z) = 0.8 + 0.2z⁻¹. Update b, run the code again, and explain which input sample now has more influence on the output.
+
+After changing the b in to (0.8 0.2) the ouput has changed as
+0.8, 1.8, 1.2, 0.2
+So the first 0.8 has more influnce in output and it is represent in current input sample, so current input sample is more influence on the output. 
+
+
+
+
