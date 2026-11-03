@@ -24,7 +24,7 @@ Because every sample moves one position to the direction of right. In the z-tran
 
 ### 4. Calculate y[0], y[1], y[2] and y[3] by hand. Compare them with MATLAB
 
-y[n] = 0.5x[n] + 0.5x[n-1]
+1. y[n] = 0.5x[n] + 0.5x[n-1]
 
 y[0] = 0.5x[0] + 0.5x[0-1]
 
@@ -33,20 +33,21 @@ y[0] = 0.5(1) + 0.5(0) { Assume the input is zero before n = 0.}
 y[0] = 0.5
 
 
-y[1] = 0.5x[1] + 0.5x[1-1]
+2. y[1] = 0.5x[1] + 0.5x[1-1]
 
 y[1] = 0.5(2) + 0.5(1)
 
 y[1] = 1.5
 
-y[2] = 0.5x[2] + 0.5x[2-1]
+
+3. y[2] = 0.5x[2] + 0.5x[2-1]
 
 y[2] = 0.5(1) + 0.5(2)
 
 y[2] = 1.5
 
 
-y[3] = 0.5x[3] + 0.5x[3-1]
+4. y[3] = 0.5x[3] + 0.5x[3-1]
 
 y[3] = 0.5(0) + 0.5(1)
 
